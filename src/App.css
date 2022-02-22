@@ -1,0 +1,4 @@
+.App {
+  height: 100vh;
+  transition: background-color ease-in 0.3s;
+}

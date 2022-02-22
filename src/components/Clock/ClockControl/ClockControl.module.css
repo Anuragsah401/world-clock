@@ -1,0 +1,19 @@
+.clockControl {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+label {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+select {
+  background-color: #ebe9ec42;
+  cursor: pointer;
+  height: 4vh;
+  text-align: center;
+  padding: 0 1em 0 0;
+  text-align-last: center;
+  font-size: medium;
+}

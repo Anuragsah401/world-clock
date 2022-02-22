@@ -1,0 +1,8 @@
+.sideDrawer {
+  width: 280px;
+  height: 100%;
+  max-width: 60%;
+  position: absolute;
+  z-index: 100;
+  background-color: #707070;
+}

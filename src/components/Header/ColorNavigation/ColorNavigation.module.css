@@ -1,0 +1,52 @@
+.backgroundColorsItems {
+  display: flex;
+  margin: 0;
+  color: aliceblue;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.backgroundColorsItem {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.title {
+  border-bottom: 2px solid white;
+  margin-bottom: 0.5rem;
+  display: none;
+}
+
+.red:hover,
+.active1 {
+  background-color: red;
+}
+
+.blue:hover,
+.active2 {
+  background-color: blue;
+}
+.yellow:hover,
+.active3 {
+  background-color: yellow;
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  .backgroundColorsItems {
+    /* width: 100%; */
+    flex-flow: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  .backgroundColorsItem {
+    width: 100%;
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+}

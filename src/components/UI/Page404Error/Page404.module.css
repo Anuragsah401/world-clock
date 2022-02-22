@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+
+.pageError {
+  background-color: #4a4a4a;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  color: rgb(230, 230, 230);
+  font-family: "Nunito Sans";
+  display: flex;
+}
+
+.image {
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.errorMessage {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+}
+
+.errorMessageContents {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 7.5em;
+  margin: 15px 0px;
+  font-weight: bold;
+  text-align: left;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: left;
+}
+
+.errorMessage p {
+  text-align: left;
+}
+
+.errorMessage button {
+  padding: 8px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 5px 0px;
+  font-family: inherit;
+  border: 3px solid rgb(95, 97, 219);
+}
+
+.errorMessage button:hover,
+.errorMessage button:active {
+  background-color: rgb(59, 63, 54);
+  transition: 0.2s;
+  color: white;
+}
+
+/* 
+desktop: 1200px
+laptop: 992px
+tablet: 768px
+phone: 480px 
+*/
+@media screen and (max-width: 1200px) {
+  .image img {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .image img {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image img {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pageError {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+  }
+
+  .image img {
+    width: 85%;
+    align-items: center;
+  }
+
+  .errorMessage {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+  }
+
+  h1,
+  h2,
+  .errorMessage p {
+    text-align: center;
+  }
+}

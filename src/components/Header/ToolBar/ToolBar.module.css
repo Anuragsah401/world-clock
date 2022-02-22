@@ -1,0 +1,49 @@
+.toolBar {
+  background-color: rgb(37, 42, 46);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+/* .toolBarContainer {
+  width: 100%;
+} */
+
+img {
+  width: 3.5%;
+  cursor: pointer;
+  margin: 0 5rem;
+}
+
+h3 {
+  color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  /* margin-left: 5rem; */
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+  img {
+    width: 9%;
+    margin: 0 1rem;
+  }
+
+  h3 {
+    padding: 0;
+  }
+
+  .onlyDesktop {
+    display: none;
+  }
+}
